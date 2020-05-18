@@ -9,14 +9,14 @@ SHODAN_API_KEY="" # SHODAN API KEY
 
 ####################################################################################################
 ####################################################################################################
-###																								 ###
-###									*** DISCLAIMER *** 											 ###
-###																								 ###
-###			This tool is written for educational purpose only.									 ###
-###			Usage of Recox for hitting targets without mutual assent is illegal.				 ###
-###			It is the responsibility of end-user to obey local and federal laws.				 ###
-###			The developer is not responsible for any misuse or damage caused by this program.	 ###
-###																								 ###
+###												 ###
+###				*** DISCLAIMER *** 						 ###
+###												 ###
+###	This tool is written for educational purpose only.					 ###
+###	Usage of Recox for hitting targets without mutual assent is illegal.		 	 ###
+###	It is the responsibility of end-user to obey local and federal laws.		 	 ###
+###	The developer is not responsible for any misuse or damage caused by this program.	 ###
+###												 ###
 ####################################################################################################
 ####################################################################################################
 
