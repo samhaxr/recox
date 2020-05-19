@@ -1,5 +1,6 @@
 # Recox v1.0
 The script aims to help in classifying vulnerabilities in web applications. The methodology RecoX is arising can spot weaknesses other than OWASP top ten. The script presents information against the target system. It gathers the information recursively over each subdomain, and IP addr for a sophisticated attack. RecoX automates several functions and saves a significant amount of time that requires throughout a manual penetration test.
+<br>For more detail please read this  <a href="https://drive.google.com/file/d/1oOshL5Fc3WiSy3SQFv26UE3YKo5N211i/view?usp=sharing" >document</a>.
 
 # Usage
 ```
