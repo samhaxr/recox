@@ -10,7 +10,7 @@ chmod +x recox.sh
 ```
 Paste the below command to run the tool from anywhere in the terminal.
 ```
-mv recox.sh /usr/lcoal/bin/recox
+mv recox.sh /usr/local/bin/recox
 ```
 
 The deep scanner comprises many check-ups including subdomain takeover, A record, passive scan, active scan, CORS misconfiguration, zone transfer test, and web content discovery.
