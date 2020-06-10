@@ -350,6 +350,7 @@ then
     do
 	  	nameserver=$(host -t ns $domain | awk 'NF>1{print $NF}' | sed 's/.$//' | head -n+1) 
 	  	connect_error=$(echo ${nameserver} | grep -o "SERVFAIL")
+		AXFR_LOC="/tmp/samhax/diglookup"
 	  	if [ "$nameserver" == "recor"  ]
 	  	then
 	  		echo -e "\n${GREEN}[+]${YELLOW} Performing test on ${LIGHTGRAY}Hostname: ${GREEN}${domain}${RESTORE}"
@@ -360,17 +361,15 @@ then
 	  		echo -e "${RED}[!]${LIGHTGRAY} NO CONNECTION${RESTORE}";
 	  	else
 			echo -e "\n${GREEN}[+]${YELLOW} Performing test on ${LIGHTGRAY}Hostname: ${GREEN}${domain} ${LIGHTGRAY}NameServer: ${GREEN}${nameserver}${RESTORE}"
-	    	AXFR=$(dig +time=5 +tries=1 @${nameserver} -t AXFR $domain > /tmp/samhax/diglookup)
-	    	timeout=$(sed 's/;//g' /tmp/samhax/diglookup | tail -n -1 | sed 's/^ //' | awk 'NF>1{print $NF}' | sed 's/.$//' )
-	    	failed=$(sed 's/;//g' /tmp/samhax/diglookup | tail -n -1 | sed 's/^ //' | awk 'NF>1{print $NF}' | sed 's/.$//' )
-	    	refused=$(sed 's/;//g' /tmp/samhax/diglookup | tail -n -1 | sed 's/^ //' | awk 'NF>1{print $NF}' | sed 's/.$//' )
-	    	if [ "$timeout" == "out" ]
+	    	AXFR=$(dig +time=5 +tries=1 @${nameserver} -t AXFR $domain > ${AXFR_LOC})
+	    	AXFR_Error=$(sed 's/;//g' ${AXFR_LOC} | tail -n -1 | sed 's/^ //' | awk 'NF>1{print $NF}' | sed 's/.$//' )
+	    	if [ "${AXFR_Error}" == "out" ]
 	    	then
 	    		echo -e "${RED}[!]${LIGHTGRAY} TIMEOUT${RESTORE}"
-	    	elif [ "$failed" == "failed" ]
+	    	elif [ "${AXFR_Error}" == "failed" ]
 	    	then
 	    		echo -e "${LRED}[!] TRANSFER FAILED!${RESTORE}"
-	    	elif [ "$refused" == "refused" ]
+	    	elif [ "${AXFR_Error}" == "refused" ]
 	    	then
 	    		echo -e "${RED}[!] ${LIGHTGRAY}Connection Refused..${RESTORE}"
 	    	else
