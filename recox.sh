@@ -361,21 +361,21 @@ then
 	  		echo -e "${RED}[!]${LIGHTGRAY} NO CONNECTION${RESTORE}";
 	  	else
 			echo -e "\n${GREEN}[+]${YELLOW} Performing test on ${LIGHTGRAY}Hostname: ${GREEN}${domain} ${LIGHTGRAY}NameServer: ${GREEN}${nameserver}${RESTORE}"
-	    	AXFR=$(dig +time=5 +tries=1 @${nameserver} -t AXFR $domain > ${AXFR_LOC})
-	    	AXFR_Error=$(sed 's/;//g' ${AXFR_LOC} | tail -n -1 | sed 's/^ //' | awk 'NF>1{print $NF}' | sed 's/.$//' )
-	    	if [ "${AXFR_Error}" == "out" ]
-	    	then
-	    		echo -e "${RED}[!]${LIGHTGRAY} TIMEOUT${RESTORE}"
-	    	elif [ "${AXFR_Error}" == "failed" ]
-	    	then
-	    		echo -e "${LRED}[!] TRANSFER FAILED!${RESTORE}"
-	    	elif [ "${AXFR_Error}" == "refused" ]
-	    	then
-	    		echo -e "${RED}[!] ${LIGHTGRAY}Connection Refused..${RESTORE}"
-	    	else
-	    		cat /tmp/samhax/diglookup
+	    		AXFR=$(dig +time=5 +tries=1 @${nameserver} -t AXFR $domain > ${AXFR_LOC})
+	    		AXFR_Error=$(sed 's/;//g' ${AXFR_LOC} | tail -n -1 | sed 's/^ //' | awk 'NF>1{print $NF}' | sed 's/.$//' )
+	    		if [ "${AXFR_Error}" == "out" ]
+	    		then
+	    			echo -e "${RED}[!]${LIGHTGRAY} TIMEOUT${RESTORE}"
+	    		elif [ "${AXFR_Error}" == "failed" ]
+	    		then
+	    			echo -e "${LRED}[!] TRANSFER FAILED!${RESTORE}"
+	    		elif [ "${AXFR_Error}" == "refused" ]
+	    		then
+	    			echo -e "${RED}[!] ${LIGHTGRAY}Connection Refused..${RESTORE}"
+	    		else
+	    			cat ${AXFR_LOC}
+	    		fi
 	    	fi
-	    fi
 	  done < ${inp}
 else
     echo ''
@@ -392,7 +392,7 @@ then
 	echo -e "\n${GREEN}[+]${LIGHTGRAY}Running Content discovery ${LGREEN}OK${RESTORE}"
 	while read dom
 	do
-		ban_ln; python3 ~/cansina/cansina.py -u $dom -p ~/cansina/wlist
+		ban_ln; python3 ~/cansina/cansina.py -u ${dom} -p ~/cansina/wlist
 	done < $inp
 else
 	echo ''
