@@ -85,14 +85,14 @@ connectivity(){
 }
 
 ban(){
-	echo -e "
-	${LIGHTGRAY}██████${LGREEN}╗${LIGHTGRAY} ███████${LGREEN}╗${LIGHTGRAY} ██████${LGREEN}╗${LIGHTGRAY} ██████${LGREEN}╗ ${LRED}██╗  ██╗
-	${LIGHTGRAY}██${LGREEN}╔══${LIGHTGRAY}██${LGREEN}╗${LIGHTGRAY}██${LGREEN}╔════╝${LIGHTGRAY}██${LGREEN}╔════╝${LIGHTGRAY}██${LGREEN}╔═══${LIGHTGRAY}██${LGREEN}╗${LRED}╚██╗██╔╝
-	${LIGHTGRAY}██████${LGREEN}╔╝${LIGHTGRAY}█████${LGREEN}╗${LIGHTGRAY}  ██${LGREEN}║${LIGHTGRAY}     ██${LGREEN}║${LIGHTGRAY} ${RED}//${LIGHTGRAY}██${LGREEN}║${LRED} ╚███╔╝ 
-	${LIGHTGRAY}██${LGREEN}╔══${LIGHTGRAY}██${LGREEN}╗${LIGHTGRAY}██${LGREEN}╔══╝${LIGHTGRAY}  ██${LGREEN}║${LIGHTGRAY}     ██${LGREEN}║${RED}//${LIGHTGRAY} ██${LGREEN}║${LRED} ██╔██╗ 
-	${LIGHTGRAY}██${LGREEN}║  ${LIGHTGRAY}██${LGREEN}║${LIGHTGRAY}███████${LGREEN}╗╚${LIGHTGRAY}██████${LGREEN}╗╚${LIGHTGRAY}██████${LGREEN}╔╝${LRED}██╔╝ ██╗${LIGHTGRAY}
-	${LGREEN}╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═════╝ ${LRED}╚═╝  ╚═╝                                         
-	";
+echo -e "
+${LIGHTGRAY}██████${LGREEN}╗${LIGHTGRAY} ███████${LGREEN}╗${LIGHTGRAY} ██████${LGREEN}╗${LIGHTGRAY} ██████${LGREEN}╗ ${LRED}██╗  ██╗
+${LIGHTGRAY}██${LGREEN}╔══${LIGHTGRAY}██${LGREEN}╗${LIGHTGRAY}██${LGREEN}╔════╝${LIGHTGRAY}██${LGREEN}╔════╝${LIGHTGRAY}██${LGREEN}╔═══${LIGHTGRAY}██${LGREEN}╗${LRED}╚██╗██╔╝
+${LIGHTGRAY}██████${LGREEN}╔╝${LIGHTGRAY}█████${LGREEN}╗${LIGHTGRAY}  ██${LGREEN}║${LIGHTGRAY}     ██${LGREEN}║${LIGHTGRAY} ${RED}//${LIGHTGRAY}██${LGREEN}║${LRED} ╚███╔╝ 
+${LIGHTGRAY}██${LGREEN}╔══${LIGHTGRAY}██${LGREEN}╗${LIGHTGRAY}██${LGREEN}╔══╝${LIGHTGRAY}  ██${LGREEN}║${LIGHTGRAY}     ██${LGREEN}║${RED}//${LIGHTGRAY} ██${LGREEN}║${LRED} ██╔██╗ 
+${LIGHTGRAY}██${LGREEN}║  ${LIGHTGRAY}██${LGREEN}║${LIGHTGRAY}███████${LGREEN}╗╚${LIGHTGRAY}██████${LGREEN}╗╚${LIGHTGRAY}██████${LGREEN}╔╝${LRED}██╔╝ ██╗${LIGHTGRAY}
+${LGREEN}╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═════╝ ${LRED}╚═╝  ╚═╝                                         
+";
 	echo -e "\033[0;32mTwitter: @sulemanmalik_3\t\tV1.0\033[0m";ban_ln
 }
 disclaimer(){
