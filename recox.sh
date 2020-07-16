@@ -335,7 +335,7 @@ Passive_scanning(){
 		[ ! -f "~/${_RECOX_REPORT}" ]&& mkdir ~/${_RECOX_REPORT}/${url} > /dev/null 2>&1; 
 		_NAME_=$(date | awk '{print "_"$1"_"$2"_"$3"_"$4"_"$5}')
 		cp ${base_dir}/CVE_REPORT ~/${_RECOX_REPORT}/${url}/CVE_REPORT${_NAME_}
-		echo -e "\n${GREEN}Report Saved @ ~/${_RECOX_REPORT}/${url}/CVE_REPORT${RESTORE}\n"
+		echo -e "\n${GREEN}Report Saved @ ~/${_RECOX_REPORT}/${url}/CVE_REPORT${_NAME_}${RESTORE}\n"
 		read -r -p "View CVE Report? [y/N] " response
 		if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 		then
