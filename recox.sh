@@ -339,7 +339,7 @@ Passive_scanning(){
 		read -r -p "View CVE Report? [y/N] " response
 		if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 		then
-			less ~/${_RECOX_REPORT}/${url}/CVE_REPORT
+			less ~/${_RECOX_REPORT}/${url}/CVE_REPORT${_NAME_}
 		else
 			echo ''
 		fi
