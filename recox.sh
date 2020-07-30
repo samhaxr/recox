@@ -48,7 +48,8 @@ package(){
 		[ -z $pcregrep ]&& sudo apt-get install pcregrep -y > /dev/null 2>&1;echo -ne 'Checking Pcre[########                  30%]\r';
 		[ -z $beautify ]&& sudo apt-get install python-setuptools -y > /dev/null 2>&1 && git clone https://github.com/einars/js-beautify.git > /dev/null 2>&1 &&cd js-beautify/python \
 		&& sudo python setup.py install > /dev/null 2>&1 && cd ..&& rm -rf js-beautify;echo -ne 'Checking JS-B[########                  40%]\r';
-		[ ! -f "~/CORStest" ]&& git clone https://github.com/recoxv1/CORStest ~/CORStest > /dev/null 2>&1;echo -ne 'Checking Cors[##########                50%]\r';
+		[ ! -f "~/CORStest" ]&& git clone https://github.com/recoxv1/CORStest ~/CORStest > /dev/null 2>&1 && sudo apt install python3-pip -y > /dev/null 2>&1 && sudo apt install php -y \
+		> /dev/null 2>&1 && pip3 install dnspython /dev/null 2>&1> ;echo -ne 'Checking Cors[##########                50%]\r';
 		[ ! -f "~/cansina" ]&& git clone --depth=1 https://github.com/recoxv1/cansina ~/cansina > /dev/null 2>&1 && pip3 install -r ~/cansina/requirements.txt > /dev/null 2>&1;\
 		echo -ne 'Checking Cans[#############             60%]\r';[ ! -f "~/cansina/wlist" ]&& curl -s -L https://raw.githubusercontent.com/recoxv1/SecLists/master/Discovery/Web-Content/common.txt \
 		> ~/cansina/wlist;echo -ne "${GREEN}Checking List[################          70%]\r";[ ! -f "~/relative-url-extractor" ]&& git clone https://github.com/recoxv1/relative-url-extractor.git \
@@ -352,7 +353,7 @@ subtakover(){
 	if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 	then
 		echo -e "\n${GREEN}[+]${LIGHTGRAY} Running Subdomain Takeover ${LGREEN}OK${RESTORE}\n"
-		python ~/subdomain-takeover/takeover.py -d ${url} -f ${inp} -t 30;echo '';ban_ln
+		python3 ~/subdomain-takeover/takeover.py -d ${url} -f ${inp} -t 30;echo '';ban_ln
 	else
 		echo ''
 	fi
