@@ -1,4 +1,4 @@
-[![GitHub release](https://img.shields.io/badge/release-v1.0-brightgreen?style=flat-square)](https://github.com/samhaxr/SXDork/releases/tag/1.1.2)
+[![GitHub release](https://img.shields.io/badge/release-v2.0-brightgreen?style=flat-square)](https://github.com/samhaxr/SXDork/releases/tag/1.1.2)
 [![GitHub stars](https://img.shields.io/github/stars/samhaxr/recox?style=flat-square)](https://github.com/samhaxr/recox/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/samhaxr/recox?style=flat-square)](https://github.com/samhaxr/recox/network)
 [![GitHub issues](https://img.shields.io/github/issues/samhaxr/recox?style=flat-square)](https://github.com/samhaxr/recox/issues)
