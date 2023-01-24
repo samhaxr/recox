@@ -1,5 +1,12 @@
+[![GitHub release](https://img.shields.io/badge/release-v1.0-brightgreen?style=flat-square)](https://github.com/samhaxr/SXDork/releases/tag/1.1.2)
+[![GitHub stars](https://img.shields.io/github/stars/samhaxr/recox?style=flat-square)](https://github.com/samhaxr/recox/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/samhaxr/recox?style=flat-square)](https://github.com/samhaxr/recox/network)
+[![GitHub issues](https://img.shields.io/github/issues/samhaxr/recox?style=flat-square)](https://github.com/samhaxr/recox/issues)
+[![GitHub pulls](https://img.shields.io/github/issues-pr/samhaxr/recox?style=flat-square)](https://github.com/samhaxr/recox/pulls)
+[![GitHub license](https://img.shields.io/github/license/samhaxr/recox?style=flat-square)](https://github.com/samhaxr/recox/blob/main/LICENSE)
+
 # Recox v2.0
-The script aims to help in classifying vulnerabilities in web applications. The methodology RecoX is arising can spot weaknesses other than OWASP top ten. The script presents information against the target system. It gathers the information recursively over each subdomain, and IP addr for a sophisticated attack. RecoX automates several functions and saves a significant amount of time that requires throughout a manual penetration test.
+RecoX is a powerful tool that is specifically designed to help in identifying and classifying vulnerabilities in web applications. It uses a unique methodology that is able to spot weaknesses that may not be included in the OWASP top ten vulnerabilities list. The script is designed to gather information about the target system in a recursive manner, covering all subdomains and IP addresses that may be used in a sophisticated attack. The information gathered by RecoX is then presented in a clear and organized manner, making it easy for security professionals to understand and address the vulnerabilities. Additionally, the script automates several functions that are typically performed manually during a penetration test, saving a significant amount of time and effort for the user.
 <br>For more detail please read this  <a href="https://drive.google.com/file/d/1oOshL5Fc3WiSy3SQFv26UE3YKo5N211i/view?usp=sharing" >document</a>.
 
 # Usage
