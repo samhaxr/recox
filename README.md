@@ -48,7 +48,7 @@ The deep scanner is an incredibly powerful function that can help organizations 
 New version v2.0 includes bug fixes and CVE Reporting.
 
 # Youtube Tutorial
-[![RecoX](RecoX.png)](https://www.youtube.com/watch?v=rsl97682xXA&feature=youtu.be)
+[![RecoX](RecoX.png)](https://youtu.be/rV5mCUWc1kk)
 
 # Credit
 
