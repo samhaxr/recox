@@ -20,12 +20,13 @@ RecoX is an invaluable asset for any security professional looking to improve th
 # Usage
 ```
 git clone https://github.com/samhaxr/recox
+cd recox
 chmod +x recox.sh
 ./recox.sh
 ```
 Paste the below command to run the tool from anywhere in the terminal.
 ```
-mv recox.sh /usr/local/bin/recox
+sudo mv recox.sh /usr/local/bin/recox
 ```
 
 The deep scanner is a comprehensive function that performs a variety of check-ups to identify potential security vulnerabilities within a web application. Its many features include subdomain takeover, A record analysis, passive and active scanning, CORS misconfiguration testing, zone transfer testing, and web content discovery.
